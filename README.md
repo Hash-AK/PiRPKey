@@ -1,5 +1,5 @@
 # PiRPKey
-A small, fully-open-source security supporting multiple protocols (WIP project)
+A small, fully-open-source security key supporting multiple protocols (WIP project)
 
 
 ## Overview
