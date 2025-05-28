@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 2:30**
+**Total : 2:50**
 ## Day 1 (26 May 2025)
 
 Read about u2f/Fido
@@ -54,7 +54,7 @@ void loop() {
 Now I only need to test if [the libary for the pico I mentionned earlier](https://github.com/martinkooij/pi-pico-LCD) works now.
 
 
-**Electronic : 30 min**  
+**Electronic : 50 min**  
 
 ## Brainstorm 
 For now v1 will be :
