@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2024-03-20"
 ---
 # Journal
-**Total : 2:00**
+**Total : 2:30**
 ## Day 1 (26 May 2025)
 
 Read about u2f/Fido
@@ -26,6 +26,7 @@ I'm trying to get my Orpheus Pico to print on an LCD 16x2 (non I2C). It may seem
 Saddly it doesn't seems to work at all. I tried [this libary](https://github.com/martinkooij/pi-pico-LCD) with some minor modification to the circuit. I'm really stuck so I tried on an Arduino Uno with the Arduino IDE/libraries (good ol' Arduino). Work _fine_, with the exact same LCD and circuit (had to change the pisn in the code that's really all)  
 ![Image of the Arduino displaying on the LCD](/assets/LCDWithArduino.jpg)  
 
+**Electronic : 30 min**  
 
 ## Brainstorm 
 For now v1 will be :
