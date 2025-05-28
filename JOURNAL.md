@@ -8,7 +8,7 @@ created_at: "2025-05-26"
 **Total : 2:50**
 ## Day 1 (26 May 2025)
 
-Read about u2f/Fido
+Read about FIDO U2F and WebAuthnn
 https://www.yubico.com/products/how-the-yubikey-works/
 
 
