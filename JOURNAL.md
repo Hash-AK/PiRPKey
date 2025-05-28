@@ -2,7 +2,7 @@
 title: "PiRPKey"
 author: "@Hash-ak"
 description: "A small, fully-open-source security skey upporting multiple protocol (WIP project)"
-created_at: "2024-03-20"
+created_at: "2025-05-26"
 ---
 # Journal
 **Total : 2:30**
@@ -25,6 +25,34 @@ I'm also following [Raspberry's official Getting Started With The Pico](https://
 I'm trying to get my Orpheus Pico to print on an LCD 16x2 (non I2C). It may seem odd but that's because I'm (trying) to make up a hardware base to test a very rudimentary TOTPs generation mechanism on, and I need a display (technically could use serial but dispaly is cooler). I would really had loved to test o a 0.91" OLED (what I'll use for the board, when I design it), but I don't have any so I'm forced to use a 16x2 LCD.  
 Saddly it doesn't seems to work at all. I tried [this libary](https://github.com/martinkooij/pi-pico-LCD) with some minor modification to the circuit. I'm really stuck so I tried on an Arduino Uno with the Arduino IDE/libraries (good ol' Arduino). Work _fine_, with the exact same LCD and circuit (had to change the pisn in the code that's really all)  
 ![Image of the Arduino displaying on the LCD](/assets/LCDWithArduino.jpg)  
+_Arduino running the LCD beside the non-working Orpheus Pico_  
+
+
+
+Finally, after asking my favourite AI, [Perplexity](https://perplexity.ai), to try to help me debug, it gave me a fully-contained code and circuit that worked. I'm not 100% sure if the problem was hardware-related or if it was just that the library's example I used was not okay, so I'm trying to test other stuff with the same pins.  
+![Image of the pico running the LCD](/assets/PicoRunningLCD.jpg)  
+_The Orpheus Pico finally running the LCD with the AI-generated code!! Wooo-hoo!!! 🎊_
+
+Even better, I tried to run a simple code from the Arduino IDE (that I configured correctly so I can flash the code on my Pico), _and it worked even tho I tried the **exact** same code earlier but with different pins connected._ The problem definitely look like it was some pins problem (either I wrongly connected wires multiple times in a row or the GPIOs that I used where faulty, I'm not sure  
+Here's the Arduino code I used :  
+```C
+#include <LiquidCrystal.h>
+
+// Pin mapping: LiquidCrystal(rs, en, d4, d5, d6, d7)
+LiquidCrystal lcd(16, 17, 18, 19, 20, 21);
+
+void setup() {
+  lcd.begin(16, 2); 
+  lcd.print("Hello, Pico!");
+  lcd.setCursor(0, 1);
+  lcd.print("LCD Test OK");
+}
+
+void loop() {
+}
+```  
+Now I only need to test if [the libary for the pico I mentionned earlier](https://github.com/martinkooij/pi-pico-LCD) works now.
+
 
 **Electronic : 30 min**  
 
