@@ -19,6 +19,14 @@ I'm also following [Raspberry's official Getting Started With The Pico](https://
 **Research : 1:30 min**  
 **Code : 30 min**  
 
+
+## Day 2 (28 May 2025)
+
+I'm trying to get my Orpheus Pico to print on an LCD 16x2 (non I2C). It may seem odd but that's because I'm (trying) to make up a hardware base to test a very rudimentary TOTPs generation mechanism on, and I need a display (technically could use serial but dispaly is cooler). I would really had loved to test o a 0.91" OLED (what I'll use for the board, when I design it), but I don't have any so I'm forced to use a 16x2 LCD.  
+Saddly it doesn't seems to work at all. I tried [this libary](https://github.com/martinkooij/pi-pico-LCD) with some minor modification to the circuit. I'm really stuck so I tried on an Arduino Uno with the Arduino IDE/libraries (good ol' Arduino). Work _fine_, with the exact same LCD and circuit (had to change the pisn in the code that's really all)  
+![Image of the Arduino displaying on the LCD](/assets/LCDWithArduino.jpg)  
+
+
 ## Brainstorm 
 For now v1 will be :
 
