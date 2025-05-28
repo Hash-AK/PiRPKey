@@ -54,7 +54,9 @@ void loop() {
 Now I only need to test if [the libary for the pico I mentionned earlier](https://github.com/martinkooij/pi-pico-LCD) works now.
 
 
+
 **Electronic : 50 min**  
+**Code : 15 mins**
 
 ## Brainstorm 
 For now v1 will be :
