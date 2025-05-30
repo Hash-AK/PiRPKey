@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 6:00**
+**Total : 6:45**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -83,9 +83,10 @@ As I'm working on a USB-stick-format PCB I will use USB male plug (duh, who want
 
 After using EasyEDA2KiCAD I was able to import the symbol in KiCAD. So I'm wiring up the connection in schematics. 
 
+
 I also found [this awesome gist](https://gist.github.com/sm-Fifteen/df1a94b6b6e0670e0b5a0c362ef2faa2) explaining what are Yubikeys
 
-**Schematics + Research : 2:15 min**  
+**Schematics + Research : 3:00 min**  
 
 
 ## Brainstorm 
