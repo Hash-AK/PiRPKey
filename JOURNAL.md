@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 3:05**
+**Total : 3:45**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -58,6 +58,24 @@ Now I only need to test if [the libary for the pico I mentionned earlier](https:
 **Electronic : 50 min**  
 **Code : 15 mins**
 
+## Day 3 (29 May 2025)
+
+So as my LCD fully work with martinkooij's libary and Arduino's one, I'm reasdy to start coding! AS I'm not really an expert in C/C++ I want to first try to make a small mockup of a TOTP generation mechanism, so very very basic, not encrypted in memory, etc.
+
+The main problem is that the TOTP generation mechanism require the current date & time, but as there is no wifi, the time on the pico (and by extension, the board I'll design) always reset at boot. So either I will need to :
+
+- Use NTP (but require wifi so i cant test on my orph pico, and my board will need to have wifi module so be bigger)/a onboard external RTC (again, will add to the size), or
+- The user will need to set it up at each reboot (if I put a battery it _shouldn't_ be that often but still), **OR**,
+- I try to implement something to get the time via serial from the PC where the pico/key is plugged (but will require some sort of 'companion app'
+
+Considering those options, I think that no 2 is the best for this use case. 
+AS I'm just going to try to make a  mockup TOTP generation thing on my LCD, I will just hardcode dates & time (as shown in [RPI's official examples](https://github.com/raspberrypi/pico-examples/blob/master/rtc/hello_rtc/hello_rtc.c), in the future of course so it will ocver the compilation time, and i just fire up my pico when the true date come so it can generate TOTPs.
+For now I'm just trying to make the Date appear on the LCD (used the whole 
+
+
+**Code : 40 min**
+
+
 ## Brainstorm 
 For now v1 will be :
 
@@ -75,7 +93,7 @@ The user setup 2fa on the website. He take the encoded secret, then plug in he's
 
 Back on his pc, he open the usb drive, search for the otp.json that just got decrypted, and add a new field ( something like "sites :Google:com. Secret : xxxxxxxxxxx)
 
-He then unmount the key, which reboot (ask for pin to re encrypt the pins?)
+He then unmount the key, which reboot (ask for pin to re encrypt the files?)
 
 Now, when he wants to log in that same site; he just scroll troughs his otp in the display, go on that sites otp, and then manually enter it on the website before th stone expire, as showed by a progression bar/countdown timer on the display
 
