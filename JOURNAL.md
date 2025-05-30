@@ -82,13 +82,17 @@ Today I decided that, beside trying to start the TOTP generation code, I will al
 As I'm working on a USB-stick-format PCB I will use USB male plug (duh, who wants to have to use a cable to plug it to their PC), but most guide use female/receptacle USB. Normally I think I shouldn't have too much adapting [the oen I choose](https://jlcpcb.com/partdetail/383026-918118A2021Y40006/C399938), still new to that tho.
 
 After using EasyEDA2KiCAD I was able to import the symbol in KiCAD. So I'm wiring up the connection in schematics. 
-
+Wiring up the USB-C was a bit tricky because from what I saw no guide showed how to wire a _male USB C_ plug, but with the guidance of Perplexity I was able tp understand both how to wire up my specific model and what each pin mean (because they have different name than what's used in the guides)  
+At the end of the day, here's my advancement :  
+  
+![Kicad schematic as of 30 may 2025](/assets/KicadSchematic-2025-05-30.jpg)  
+_My schematic as of now 😁_
 
 I also found [this awesome gist](https://gist.github.com/sm-Fifteen/df1a94b6b6e0670e0b5a0c362ef2faa2) explaining what are Yubikeys
 
 **Schematics + Research : 3:00 min**  
 
-
+----------------------------------------------------
 ## Brainstorm 
 For now v1 will be :
 
@@ -96,19 +100,24 @@ For now v1 will be :
    - 4 mb of flash (originally planned for 16 but that's prob overkill considering [that apparently even Yubikey 5 have only 512kb of flash](https://gist.github.com/sm-Fifteen/df1a94b6b6e0670e0b5a0c362ef2faa2)
    - OLED display for OTPS/menu
    - Many entry to switch between sites otps, change settings, etc
-   - Support fido/fido 2, u2f, TOTP
+   - Support fido 2, u2f, TOTP
 
+I would want the v2 to have :
+   - NFC support (for mobile phones)
+   - Bluetooth (for the same reason)
+   - OpenPGP support
+   - RP2350 for more secure resting data encryption
+   - Maybe Biometrics, to prevent other people to use your key, even if they physically have it
 
-
+----------------------------------------------------
 WORKFLOW for TOTP
-The user setup 2fa on the website. He take the encoded secret, then plug in he's key, enter the decoding pin, and select "Mount ad usb in the menu" .
+The user setup 2fa on the website. He take the encoded secret, then plug in his key, enter the decoding PIN (or 'device's PIN), and select "Mount as USB storage device" in the menu.
 
+Back on his pc, he mount & open the usb drive, search for the otp.json file that just got decrypted from the PiRPKey's flash, and add a new field ( something like "sites: Google:com.Secret : xxxxxxxxxxx), to let the PiRPKey know what is the website to be used with what TOTP.
 
-Back on his pc, he open the usb drive, search for the otp.json that just got decrypted, and add a new field ( something like "sites :Google:com. Secret : xxxxxxxxxxx)
+He then unmount the key, wich eboot (after asking for the PIN to re encrypt the file?)
 
-He then unmount the key, which reboot (ask for pin to re encrypt the files?)
+Now, when he wants to log in that same site; he just scroll troughs his generate TOTPs in the display, go on that site's TOTP, and then manually enter it on the website before the time expire, as showed by a progression bar/countdown/timer on the display
 
-Now, when he wants to log in that same site; he just scroll troughs his otp in the display, go on that sites otp, and then manually enter it on the website before th stone expire, as showed by a progression bar/countdown timer on the display
-
-He can also just go in the correct field and press the "auto type otp" button
+He can also just go in the correct field and press the "Automatically enter TOTP" button, which will just use the HID capability of the device to type the TOTP (the user still need to have the TOTP field selected on the site's login page)
 
