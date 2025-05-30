@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 3:45**
+**Total : 6:00**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -70,17 +70,29 @@ The main problem is that the TOTP generation mechanism require the current date 
 
 Considering those options, I think that no 2 is the best for this use case. 
 AS I'm just going to try to make a  mockup TOTP generation thing on my LCD, I will just hardcode dates & time (as shown in [RPI's official examples](https://github.com/raspberrypi/pico-examples/blob/master/rtc/hello_rtc/hello_rtc.c), in the future of course so it will ocver the compilation time, and i just fire up my pico when the true date come so it can generate TOTPs.
-For now I'm just trying to make the Date appear on the LCD (used the whole 
+
 
 
 **Code : 40 min**
+
+## Day 4 (30 May 2025)  
+
+Today I decided that, beside trying to start the TOTP generation code, I will also try to start of the PCB design in KiCAD. To help me out, I foudn a few ressources, [like RPI's official guide](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf) or [this blog article](https://deepbluembedded.com/raspberry-pi-pico-rp2040-schematic-pcb-design-in-kicad/), wich will highly help me making the basic (decoupling, wiring up the flash, etc), and that I will be able to use as a base for my project (like adding more inputs/leds, adding the OLED screen, maybe adding NFC support (if I don't leave that for the v2).
+
+As I'm working on a USB-stick-format PCB I will use USB male plug (duh, who wants to have to use a cable to plug it to their PC), but most guide use female/receptacle USB. Normally I think I shouldn't have too much adapting [the oen I choose](https://jlcpcb.com/partdetail/383026-918118A2021Y40006/C399938), still new to that tho.
+
+After using EasyEDA2KiCAD I was able to import the symbol in KiCAD. So I'm wiring up the connection in schematics. 
+
+I also found [this awesome gist](https://gist.github.com/sm-Fifteen/df1a94b6b6e0670e0b5a0c362ef2faa2) explaining what are Yubikeys
+
+**Schematics + Research : 2:15 min**  
 
 
 ## Brainstorm 
 For now v1 will be :
 
    - RP2040 based
-   - 16 mb of flash
+   - 4 mb of flash (originally planned for 16 but that's prob overkill considering [that apparently even Yubikey 5 have only 512kb of flash](https://gist.github.com/sm-Fifteen/df1a94b6b6e0670e0b5a0c362ef2faa2)
    - OLED display for OTPS/menu
    - Many entry to switch between sites otps, change settings, etc
    - Support fido/fido 2, u2f, TOTP
