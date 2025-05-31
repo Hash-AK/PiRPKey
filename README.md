@@ -3,8 +3,8 @@ A small, fully-open-source security key supporting multiple protocols (WIP proje
 
 
 ## Overview
-This project aims to make a fully open source security key, supporting multiple protocols, like FIDO/U2F and TOTP.
-It will use a small OLED display to show the TOTPs of the different registered websites the user has entered, FIDO capability for WebAuthn and have a battery for mobile TOTP use.  
+This project aims to make a fully open source security key, supporting multiple protocols, like FIDO2 and TOTP/HTOP.
+It will use a small OLED display to show the TOTPs of the different registered websites the user has entered, FIDO capability for WebAuthn and have a battery for mobile TOTP generation.  
 It is made as a project in [HackClub's Highway event](https://highway.hackclub.com)
 
 # #What I would want for V1
@@ -14,9 +14,10 @@ It is made as a project in [HackClub's Highway event](https://highway.hackclub.c
 - Small menu to set up different things, like emergency wipeout, timeout, preferred websites, auto-type of the TOTPs, setting up the device's PIN (more about that in the next point)
 - Use of a PIN to encrypt/decrypt the TOTPS stored for easy and secure TOTP secret storage
 - RP2040 as the MCU
-- 16MB of flash
+- 4MB of flash
 - Small battery for mobile TOTPs usage
 - Secure/travel mode that require PIN to show TOTPs/unlock the device
+- USB A male for Yubikey/usb stick style (I originalyl wanted male USB C but apparently it's too expensive to have in assembled)
 
 
 ## Status
