@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 8:20**
+**Total : 9:20**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -104,7 +104,12 @@ For now [this](https://jlcpcb.com/partdetail/2892295-917181A202ED60200/C2763083)
 
 Continuing my design, I'm now asking if I should or not add holes for GPIO pins. It is not required for my design (the OLED will go directly to the RP2040), but may be cool to have if, after receiving the first batch of V1, I want to prototype more stuff.
 
-**Schematics + Research : 1:35 min**
+
+On the code aspect of my project, I found [this HMAC library for C/C++](https://github.com/h5p9sl/hmac_sha256) that could be interestant to use for TOTP, before realizing I only need _**HMAC-SHA1**_ for TOTPs. 
+
+After some research, [a result on the arduino forum](https://forum.arduino.cc/t/pi-pico-hmac-sha1-help/1149162/2) got me annother libary : [this one](https://github.com/Akagi201/hmac-sha1) 
+
+**Schematics + Research : 2:05 min**
 
 ----------------------------------------------------
 ## Brainstorm 
