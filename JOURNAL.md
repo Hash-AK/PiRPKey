@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 6:45**
+**Total : 7:20**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -91,6 +91,17 @@ _My schematic as of now 😁_
 I also found [this awesome gist](https://gist.github.com/sm-Fifteen/df1a94b6b6e0670e0b5a0c362ef2faa2) explaining what are Yubikeys
 
 **Schematics + Research : 3:00 min**  
+
+## Day 5 (31 May 2025)
+
+Continuing my schematic, I now added the crystal as recommanded by the Hardware Design guide ( [this one](https://jlcpcb.com/partdetail/AbraconLlc-ABM8_272T3/C20625731) seems to be correct). I had some problem with my KiCAD's PCB editor (some kiface error), seems to be gone by updating my whole system. 
+
+When talking with @geschmit in the slack he made me realize something important : first the USB-C I choosed was for vertical-mount (💀 me), and second, USB-C male are _really expensive_ to assemble by PCB manufacturer (like 50+ $). Because of that, I will switch to a USB A male connector (I want to keep the USB stick/yubikey format, so I don't want a C female)
+
+So I need to review my USB conenctions and fidn a new replacement 😭
+
+
+**Schematics + Research : 35 min**
 
 ----------------------------------------------------
 ## Brainstorm 
