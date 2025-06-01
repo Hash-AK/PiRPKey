@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 9:20**
+**Total : 10:40**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -110,6 +110,12 @@ On the code aspect of my project, I found [this HMAC library for C/C++](https://
 After some research, [a result on the arduino forum](https://forum.arduino.cc/t/pi-pico-hmac-sha1-help/1149162/2) got me annother libary : [this one](https://github.com/Akagi201/hmac-sha1) 
 
 **Schematics + Research : 2:05 min**
+
+## Day 6 (1 June 2025)
+
+So today I started a bit late, so I decided I would work on the TOTP code in C. AS I said, I'm pretty beginner in C so all the bits/bytes operation, big endyan, etc where a bit too much for me, so I used AI to explain to me and guide me on what I need to do (hope this is accepted by Higway, to clarify I didn't generated the whole code by AI and just copy paste, I tried my best to code stuff, asked alootttt of explanation of what the code was doing, why we do liek so, etc)
+
+**Code : 1:20 min**
 
 ----------------------------------------------------
 ## Brainstorm 
