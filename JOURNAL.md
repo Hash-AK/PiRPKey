@@ -125,7 +125,7 @@ Today I added an external RTC (DS3231) with a CR1220 battery holder to my design
 After talking to @acon on the slack I now changed my plan and I will try to implement the maximum of function I wanted to leave for v2 into v1 (as I don't know if I will be able to make multiple iterations). I also started adding much of my compoment's footprints to have a better global view. 
 
 Here's a screenshot of the current state of the schematics :   
-[image ofi the schematic on june 2](/assets/KicadSchematic-2025-06-O2.jpg)  
+![image of the schematic on june 2](/assets/KicadSchematic-2025-06-O2.jpg)  
 _Schematic as of today (june 2 2025)_  
 
 
