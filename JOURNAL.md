@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 10:40**
+**Total : 11:50**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -131,6 +131,12 @@ _Schematic as of today (june 2 2025)_
 
 
 **Schematic : 30 min**
+
+## Day 8 (3 June 2025)
+
+Today I (again 😭) changed my plan after talking with @Rudy on the slack : I'm goign to use a pcb edge connector for the usb instead of a metal shell one. I found the correct symbol & footprint on easyeda, exported it to kicad and now changed my design. Now I'm nearly done with the shematic, I only need to find if I will use a capacitive touchpad (like yubikeys does), a normal button or a fingerprint scanner (if I find any that fit). I also need to add some leds and it should be good!
+
+**Research + schematics : 40 min**
 
 ----------------------------------------------------
 ## Brainstorm 
