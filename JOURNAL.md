@@ -138,6 +138,20 @@ Today I (again 😭) changed my plan after talking with @Rudy on the slack : I'm
 
 **Research + schematics : 40 min**
 
+## Day 9 (4 June 2025)
+
+Big news : after soem research I realized that nor NFC nor BLE was possible witouth a battery. Which means that for non-usb-c phones  (of if you dont have a usb-c-to-a adapter), the key would be pretty much useless.  considering i want to be able to use it for mobile (an for totp generation for mobile), I decided to try to integrate a lipo battery. I will probably use something like [this](https://shop.pimoroni.com/products/lipo-battery-pack?variant=20429081991), as 150mAh seems pretty okay (according to Perplexity, should be sufficient for 2 hours if I have an OLED + BLE + NFC + RTC (and I will prob try to disable those when not needed), and it's pretty compact so I guess it should fit in a usb stick format. 
+
+To wire up the IC circuit that I will use to charge the lipo (tp4056 to be exact), I used [that guide](https://www.instructables.com/How-to-Make-Lipo-Battery-Charger-Circuit/).
+
+>The value of program Resistor can be calculated by using the below formula
+>RPROG = (Vprog/ Ibat)* 1200 (Icharge =1A and VPROG = 1V)  
+
+In my case, it is so (1V / 0.15Ah) * 1200 = 8000 Ohms, which fit what the table show :  
+![table showing the value dependign on the Li-Po's Intensity](https://i0.wp.com/electronicsworkshops.com/wp-content/uploads/2022/07/Screenshot-from-2022-07-17-20-08-57.png?resize=195%2C269&ssl=1)  
+
+I'm also going after the big compoments of my board to reduce the size, so I may trade the NCP1117 LDO to a smalller MCP1700 3.3 in SOT-23-3.
+
 ----------------------------------------------------
 ## Brainstorm 
 For now v1 will be :
