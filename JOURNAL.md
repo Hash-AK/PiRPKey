@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 11:50**
+**Total : 12:30**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -151,6 +151,9 @@ In my case, it is so (1V / 0.15Ah) * 1200 = 8000 Ohms, which fit what the table 
 ![table showing the value dependign on the Li-Po's Intensity](https://i0.wp.com/electronicsworkshops.com/wp-content/uploads/2022/07/Screenshot-from-2022-07-17-20-08-57.png?resize=195%2C269&ssl=1)  
 
 I'm also going after the big compoments of my board to reduce the size, so I may trade the NCP1117 LDO to a smalller MCP1700 3.3 in SOT-23-3.
+
+
+**Schematic + Research : 40 min**
 
 ----------------------------------------------------
 ## Brainstorm 
