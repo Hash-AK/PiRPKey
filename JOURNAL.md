@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 12:30**
+**Total : 13:30**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -136,7 +136,7 @@ _Schematic as of today (june 2 2025)_
 
 Today I (again 😭) changed my plan after talking with @Rudy on the slack : I'm goign to use a pcb edge connector for the usb instead of a metal shell one. I found the correct symbol & footprint on easyeda, exported it to kicad and now changed my design. Now I'm nearly done with the shematic, I only need to find if I will use a capacitive touchpad (like yubikeys does), a normal button or a fingerprint scanner (if I find any that fit). I also need to add some leds and it should be good!
 
-**Research + schematics : 40 min**
+**Research + Schematic : 40 min**
 
 ## Day 9 (4 June 2025)
 
@@ -155,6 +155,11 @@ I'm also going after the big compoments of my board to reduce the size, so I may
 
 **Schematic + Research : 40 min**
 
+## Day 10 (5 June 2025)
+
+I'm trying to implement the NFC today. As I'm completly new to that I decided to try to use AI to help me a bitm ore heavily for the connections. I will use [this](https://jlcpcb.com/partdetail/NxpSemicon-PN7150B0HNC11002Y/C702907) module.
+
+**Schematic + Research : 60 min**
 ----------------------------------------------------
 ## Brainstorm 
 For now v1 will be :
