@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 13:50**
+**Total : 14:25**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -157,9 +157,11 @@ I'm also going after the big compoments of my board to reduce the size, so I may
 
 ## Day 10 (5 June 2025)
 
-I'm trying to implement the NFC today. As I'm completly new to that I decided to try to use AI to help me a bitm ore heavily for the connections. I will use [this](https://jlcpcb.com/partdetail/NxpSemicon-PN7150B0HNC11002Y/C702907) module.
+I'm trying to implement the NFC today. As I'm completly new to that I decided to try to use AI to help me a bitm ore heavily for the connections. I will use [this](https://jlcpcb.com/partdetail/NxpSemicon-PN7150B0HNC11002Y/C702907) module. After some research I realized that maybe [that one](https://jlcpcb.com/partdetail/NxpSemicon-PN7160A1HNC100E/C3303788) was better so I'm switching to it. There's also [a design guide](https://www.nxp.com/docs/en/application-note/AN12988.pdf) so that's kinda nice. Again I use AI to help understand what pin go where (a real torture, it have 40 pins, thankfully only a few are used, most are N/C (Not Connected) )
 
-**Schematic + Research : 1:20 min**
+I had to add an external crystal for the nfc. I'm starting to doubt that i'll be able to fit all that in a usb stick format.
+
+**Schematic + Research : 1:55 min**
 ----------------------------------------------------
 ## Brainstorm 
 For now v1 will be :
