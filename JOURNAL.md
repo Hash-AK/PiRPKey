@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 13:30**
+**Total : 13:50**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -159,7 +159,7 @@ I'm also going after the big compoments of my board to reduce the size, so I may
 
 I'm trying to implement the NFC today. As I'm completly new to that I decided to try to use AI to help me a bitm ore heavily for the connections. I will use [this](https://jlcpcb.com/partdetail/NxpSemicon-PN7150B0HNC11002Y/C702907) module.
 
-**Schematic + Research : 60 min**
+**Schematic + Research : 1:20 min**
 ----------------------------------------------------
 ## Brainstorm 
 For now v1 will be :
