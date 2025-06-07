@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 14:25**
+**Total : 15:00**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -162,6 +162,15 @@ I'm trying to implement the NFC today. As I'm completly new to that I decided to
 I had to add an external crystal for the nfc. I'm starting to doubt that i'll be able to fit all that in a usb stick format.
 
 **Schematic + Research : 1:55 min**
+
+
+## Day 11 (6 June 2025)
+
+Today I didn't had the time to work much, sill made the NFC antenna, based on guidances from the official NXP design guide but sumarized by AI.
+I'm trying to see what i can reduce to potentially take less space on the pcb. I also got a design idea : make the whole key kinda telescopic so the board and some extension can retract inside the main shell, to look like the M.E.D.U.S.A Crash Key from the 2018 Mortal Engine movie.
+
+**Schematics : 35 min**
+
 ----------------------------------------------------
 ## Brainstorm 
 For now v1 will be :
