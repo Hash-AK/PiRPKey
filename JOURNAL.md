@@ -171,6 +171,11 @@ I'm trying to see what i can reduce to potentially take less space on the pcb. I
 
 **Schematics : 35 min**
 
+## Day 12 (7 June 2025) 
+
+I'm really starting to wonder if I should not remove NFC as it adds complexity, prob costs + I'm not 100% sure I will be able to fit it on the board. I think I will keep my current design with it as backup, won't do the pcb layout for it and will use a copy whitouth the nfc to make the layout.
+
+
 ----------------------------------------------------
 ## Brainstorm 
 For now v1 will be :
