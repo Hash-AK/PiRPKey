@@ -175,6 +175,9 @@ I'm trying to see what i can reduce to potentially take less space on the pcb. I
 
 I'm really starting to wonder if I should not remove NFC as it adds complexity, prob costs + I'm not 100% sure I will be able to fit it on the board. I think I will keep my current design with it as backup, won't do the pcb layout for it and will use a copy whitouth the nfc to make the layout.
 
+## Day 13 ( 8 June 2025)
+
+Today I will _finaly_ try to remove the NFC. It's just going to slow me down, plus I'm not even sure I'll be able to correctly implement FIDO over NFC. Ima play it safe and just try to make a 'normal' security. Well at least right now so I can see what I can do for the PCB layout
 
 ----------------------------------------------------
 ## Brainstorm 
