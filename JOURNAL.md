@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 15:00**
+**Total : 15:00 hours**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
