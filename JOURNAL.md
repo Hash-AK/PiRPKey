@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 15:00 hours**
+**Total : 16:40 hours**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -178,6 +178,10 @@ I'm really starting to wonder if I should not remove NFC as it adds complexity, 
 ## Day 13 ( 8 June 2025)
 
 Today I will _finaly_ try to remove the NFC. It's just going to slow me down, plus I'm not even sure I'll be able to correctly implement FIDO over NFC. Ima play it safe and just try to make a 'normal' security. Well at least right now so I can see what I can do for the PCB layout
+
+I'm messing around the pcb layout, replaced my flash chip with the same that what the Orpheus pico uses, to optimize the space. Now I see that the 0.91" OLED (well at least the 3d moled in kicad) is _wayyyyyyy_ too big for the key. Like it will cover most of it, so there wont beany space for the button(s). I need a smaller one, maybe like the one used on the Pinecil or the one of the EncroPi.
+
+**Schematic/PCB + Research : 1:40**
 
 ----------------------------------------------------
 ## Brainstorm 
