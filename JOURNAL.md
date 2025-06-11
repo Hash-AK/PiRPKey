@@ -5,7 +5,7 @@ description: "A small, fully-open-source security skey upporting multiple protoc
 created_at: "2025-05-26"
 ---
 # Journal
-**Total : 16:40 hours**
+**Total : 17:20 hours**
 ## Day 1 (26 May 2025)
 
 Read about FIDO U2F and WebAuthnn
@@ -183,6 +183,11 @@ I'm messing around the pcb layout, replaced my flash chip with the same that wha
 
 **Schematic/PCB + Research : 1:40**
 
+## Day 14 (11 June 2025)
+
+On Monday I bought a 0.91" OLED display from a local electronic supplier, so today I started messing around to see how I an use it with my Orph Pico. I made a simili-totp generator which have multiple pages and show fake TOPS, and can be scrolled trought by pressing a button. I coded all that in Arduino's IDE with Adafruit's SSD1306 Library. Later I gonna need to find how to do all that with the Pico SDK, but for now Arduino's fine.
+
+**Code : 40 min**
 ----------------------------------------------------
 ## Brainstorm 
 For now v1 will be :
